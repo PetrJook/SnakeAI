@@ -2,7 +2,7 @@ import numpy as np
 
 
 settings = {
-    'board_size':                  (10, 10),
+    'board_size':                  (20, 20),
 
     #### Neural Network related stuff ####
 
@@ -13,14 +13,14 @@ settings = {
     # Hidden network architecture describes the number of nodes in each hidden layer
     'hidden_network_architecture': [20, 12],   # A list containing number of nodes in each hidden layer
     # Number of directions the snake can "see" in
-    'vision_type':                 8,          # Options are [4, 8, 16]
+    'vision_type':                 16,          # Options are [4, 8, 16]
 
     #### GA stuff ####
 
     ## Mutation ##
 
     # Mutation rate is the probability that a given gene in a chromosome will randomly mutate
-    'mutation_rate':               0.05,       # Value must be between [0.00, 1.00)
+    'mutation_rate':               0.1,       # Value must be between [0.00, 1.00)
     # If the mutation rate type is static, then the mutation rate will always be `mutation_rate`,
     # otherwise if it is decaying it will decrease as the number of generations increase
     'mutation_rate_type':          'static',   # Options are [static, decaying]
